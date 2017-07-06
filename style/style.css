@@ -1,0 +1,426 @@
+body {
+    margin-top: 100px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h4 {
+    display: inline;
+}
+
+a {
+    color: #3b8bd4;
+}
+
+tbody {
+    height:200px;
+    overflow-y:auto;
+    width: 100%;
+}
+/* =============== FOOTER ===============*/
+
+.topHalfCircle {
+    height: 30px;
+    width: 60px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    background: #3b8bd4;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+#arrowFooter {
+    font-size: 23px;
+    color: white;
+    margin: auto;
+    margin-top: 7px;
+}
+
+footer{
+    margin-top: 0;
+    height: 80px;
+    background-color: #333;
+}
+
+/* =============== END FOOTER ===============*/
+
+/* =============== NAVBAR VISU ===============*/
+
+.navbar .navIcons {
+    width: 100%;
+    margin: auto;
+    list-style: none;
+}
+
+.nabar .navTitleIcon {
+    margin-bottom: 0;
+}
+
+.navbar .navTitleIcons {
+    width: 100%;
+    margin: auto;
+    list-style: none;
+}
+
+body > div.navbar.navTitleIcon {
+    margin-bottom: auto;
+}
+
+body > div.navbar.navTitleIcon > div > ul {
+    margin-left: auto;
+}
+
+.navbar .navTitleIcons > li {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.navbar .navIcons > li {
+    float: left;
+    margin-right: 5%;
+    margin-left: 5%;
+    font-size: 25px;
+}
+
+.navbar .navIcons > li > p {
+    float: left;
+    margin-right: 4%;
+    margin-left: 4%;
+    font-size: 10px;
+}
+
+body > div > div:nth-child(4) > div > ul > li:nth-child(1) {
+    margin-left: 0;
+}
+
+body > div > div:nth-child(4) > div > ul > li:nth-child(8) {
+    margin-right: 0;
+}
+
+body > div > div.navbar.navTitleIcon > div > ul {
+     padding-left: 0;
+}
+
+/* =============== END NAVBAR VISU ===============*/
+
+
+
+/* =============== COMMENT VISU ===============*/
+.post-footer {
+
+}
+.post-footer .input-group-addon a {
+  color: #454545;
+}
+.post-footer .comments-list {
+  padding: 0;
+  margin-top: 20px;
+  list-style-type: none;
+}
+.post-footer .comments-list .comment {
+  display: block;
+  width: 100%;
+  margin: 20px 0;
+}
+.post-footer .comments-list .comment .avatar {
+  width: 35px;
+  height: 35px;
+}
+.post-footer .comments-list .comment .comment-heading {
+  display: block;
+  width: 100%;
+}
+.post-footer .comments-list .comment .comment-heading .user {
+  font-size: 14px;
+  font-weight: bold;
+  display: inline;
+  margin-top: 0;
+  margin-right: 10px;
+}
+.post-footer .comments-list .comment .comment-heading .time {
+  font-size: 12px;
+  color: #aaa;
+  margin-top: 0;
+  display: inline;
+}
+.post-footer .comments-list .comment .comment-body {
+  margin-left: 50px;
+}
+.post-footer .comments-list .comment > .comments-list {
+  margin-left: 50px;
+}
+/* =============== END COMMENT VISU ===============*/
+
+.divContent {
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.formContactInput {
+    max-width: 800px;
+}
+
+#moreData {
+    width: 100%;
+    margin: 10px;
+}
+
+#BienvenuPanel {
+    margin: 10px;
+}
+
+.labelModal { 
+    margin-left: 5%;
+    position: relative;
+}
+
+.checkbox {
+    margin-top: 0;
+}
+
+.panel-heading h4 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: normal;
+    width: 75%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.label-warning {
+    margin-top: 8px;
+}
+
+.bottomButton {
+    font-size: 25px;
+    margin-bottom: 4px;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+
+.pouce {
+    font-size: 20px;
+}
+
+.btn-sm {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.navbar{
+    width: 100%;
+    margin-bottom: 0;
+}
+
+#insee2008Div{
+    margin: 0 auto;
+}
+
+.axis text {
+    font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.bar {
+    fill: steelblue;
+    fill-opacity: .9;
+}
+
+.x.axis path {
+    display: none;
+}
+
+#randomData{
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+
+/* =============== FLEX BOX =============== */
+.box-wrapper-inner {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    box-orient: horizontal;
+
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    box-direction: normal;
+
+    -webkit-box-align: stretch;
+    -moz-box-align: stretch;
+    box-align: stretch;
+}
+#box1 {
+    width: 400px;
+    margin: 10px;
+
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    box-ordinal-group: 1;
+
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+}
+#box2 {
+    width: 400px;
+    margin: 10px;
+
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    box-ordinal-group: 2;
+
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+}
+#box3 {
+    width: 400px;
+    margin: 10px;
+
+    -webkit-box-ordinal-group: 3;
+    -moz-box-ordinal-group: 3;
+    box-ordinal-group: 3;
+
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+}
+#box4 {
+    width: 400px;
+    margin: 10px;
+
+    -webkit-box-ordinal-group: 3;
+    -moz-box-ordinal-group: 3;
+    box-ordinal-group: 3;
+
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+}
+/* =============== END FLEX BOX =============== */
+
+.chart{
+    margin: auto;
+}
+#wrapper {
+    width: 100%;
+}
+#wrapper.div{
+    display: inline;
+}
+#share {
+    text-align: left;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    margin:20px;
+}
+.panelBody {
+    padding: 3px;
+}
+
+/* =============== TABLE =============== */
+.tableau{
+  width: 90% !important;
+  margin-left: 5%;
+    min-height: 150px !important;
+  height: 400px !important;
+  overflow: auto;
+}
+.tableau td th{
+  width:150px !important;
+  font-size: 150px;
+}
+/* =============== END TABLE =============== */
+
+
+/* =============== MEDIA QUERIES =============== */
+@media (min-width: 620px) and (max-width: 900px){
+    #randomData {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .navbar .navIcons > li {
+        margin-right: 4%;
+        margin-left: 4%;
+    }
+}
+
+@media (max-width: 620px) {
+    .navbar .navIcons > li {
+        margin-right: 3%;
+        margin-left: 3%;
+        font-size: 20px;
+    }
+
+    #formContact {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    #BienvenuPanel {
+        margin: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .box-wrapper-inner {
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        box-orient: vertical;
+    }
+    #box1 {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    #box2 {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    #box3 {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    #box4 {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    #randomData {
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+}
+/* =============== END MEDIA QUERIES =============== */

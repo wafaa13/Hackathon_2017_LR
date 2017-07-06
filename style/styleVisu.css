@@ -1,0 +1,50 @@
+
+#exTab2 {
+    width: 100%;
+    padding: 0;
+}
+#box1 {
+    width: 100%;
+    margin-left: 0;
+	margin-right: 0;
+}
+#box2 {
+    width: 100%;
+    margin-left: 0;
+	margin-right: 0;
+}
+#box3 {
+    width: 100%;
+    margin-left: 0;
+	margin-right: 0;
+}
+#box4 {
+    width: 100%;
+    margin-left: 0;
+	margin-right: 0;
+}
+#my_table1 {
+	margin-top: 25px;
+	overflow-y: scroll;
+	overflow-x: scroll;
+	max-height: 500px;
+	width: 100%;
+	display: block;
+}
+#rs {
+	display: inline;
+}
+.rs {
+	float: left;
+	margin-right: 10px;
+}
+.page-header {
+	margin-top: 70px;
+}
+.select {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.boxVisu {
+	margin-top: 20px;
+}
