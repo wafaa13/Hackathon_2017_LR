@@ -295,8 +295,6 @@
             $("#5").addClass("active");
             $("#tab5").addClass("active");
         }
-        
-
     </script>
 
 
@@ -306,6 +304,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js" />
     <script src="http://canvasjs.com/assets/script/canvasjs.min.js"></script>
     <script type="text/javascript" src="../draw.js"></script>
+    <script type="text/javascript" src="../controller.js"></script>
     <script type="text/javascript" src="../visu.js"></script>
     <!--<script src="http://d3js.org/d3.v3.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js" />

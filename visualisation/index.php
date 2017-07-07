@@ -196,16 +196,8 @@
     <a href="#top"><div class="topHalfCircle">
         <span id="arrowFooter" class="glyphicon glyphicon-menu-up"></span>
     </div></a>
-
-    <script type="text/javascript">
-        $("a[href='#top']").click(function() {
-            $("html, body").animate({ scrollTop: 0 }, "slow");
-        });
-    </script>
     
-    <footer>
-
-    </footer>
+    <footer> </footer>
 
 
     <!-- ============================ -->
@@ -218,19 +210,7 @@
     <script src="http://canvasjs.com/assets/script/canvasjs.min.js"></script>
     <script type="text/javascript" src="../draw.js"></script>
     <script type="text/javascript" src="../controller.js"></script>
-
-    <!-- ============================ -->
-    <!-- ======== Javascript ======== -->
-    <!-- ============================ -->
-    <script type="text/javascript">
-        $(document).ready( function() {
-            $('.chart').hover(
-                function() {$(this).animate({ 'zoom': 1.1 }, 100); },
-                function() {$(this).animate({ 'zoom': 1 }, 100);
-            });
-        });
-
-    </script>
+    <script type="text/javascript" src="../random.js"></script>
    
 
 </html>

@@ -1,56 +1,65 @@
 
-// Initialization
+// Declaration of variables
 var dataBox1 = [], dataBox2 = [], dataBox3 = [], dataBox4 = [],
     chart1 = null, chart2 = null, chart3 = null, chart4 = null;
 
-// Change chart
-$("#selectChart").change(function(){
-    var valTypeChart = $("#selectChart").val();
-    var val = $("#select0").val();
-    chart1.destroy();
-    $.getJSON( dataBox1[3], function(metadata) {
-        // Draw a visualization
-        drawGraph(dataBox1[0], valTypeChart, dataBox1[2], metadata, val, dataBox1[3], dataBox1[4]);
-    });
-});
+/**
+ * Initialization 
+ *
+ * @return
+ */
+function init() {
 
-// On changing selection, reload graph
-$("#select0").change(function() {
-    var val = $("#select0").val();
-    chart1.destroy();
-    $.getJSON( dataBox1[3], function(metadata) {
-        // Draw a visualization
-        drawGraph(dataBox1[0], dataBox1[1], dataBox1[2], metadata, val, dataBox1[3], dataBox1[4]);
+    // Change chart
+    $("#selectChart").change(function(){
+        var valTypeChart = $("#selectChart").val();
+        var val = $("#select0").val();
+        chart1.destroy();
+        $.getJSON( dataBox1[3], function(metadata) {
+            // Draw a visualization
+            drawGraph(dataBox1[0], valTypeChart, dataBox1[2], metadata, val, dataBox1[3], dataBox1[4]);
+        });
     });
-});
 
-$("#select1").change(function() {
-    var val = $("#select1").val();
-    chart2.destroy();
-    $.getJSON( dataBox2[3], function(metadata) {
-        // Draw a visualization
-        drawGraph(dataBox2[0], dataBox2[1], dataBox2[2], metadata, val, dataBox2[3], dataBox2[4]);
+    // On changing selection, reload graph
+    $("#select0").change(function() {
+        var val = $("#select0").val();
+        chart1.destroy();
+        $.getJSON( dataBox1[3], function(metadata) {
+            // Draw a visualization
+            drawGraph(dataBox1[0], dataBox1[1], dataBox1[2], metadata, val, dataBox1[3], dataBox1[4]);
+        });
     });
-});
 
-$("#select2").change(function() {
-    var val = $("#select2").val();
-    chart3.destroy();
-    $.getJSON( dataBox3[3], function(metadata) {
-        // Draw a visualization
-        drawGraph(dataBox3[0], dataBox3[1], dataBox3[2], metadata, val, dataBox3[3], dataBox3[4]);
+    $("#select1").change(function() {
+        var val = $("#select1").val();
+        chart2.destroy();
+        $.getJSON( dataBox2[3], function(metadata) {
+            // Draw a visualization
+            drawGraph(dataBox2[0], dataBox2[1], dataBox2[2], metadata, val, dataBox2[3], dataBox2[4]);
+        });
     });
-});
 
-$("#select3").change(function() {
-    var val = $("#select3").val();
-    chart4.destroy();
-    $.getJSON( dataBox4[3], function(metadata) {
-        // Draw a visualization
-        drawGraph(dataBox4[0], dataBox4[1], dataBox4[2], metadata, val, dataBox4[3], dataBox4[4]);
+    $("#select2").change(function() {
+        var val = $("#select2").val();
+        chart3.destroy();
+        $.getJSON( dataBox3[3], function(metadata) {
+            // Draw a visualization
+            drawGraph(dataBox3[0], dataBox3[1], dataBox3[2], metadata, val, dataBox3[3], dataBox3[4]);
+        });
     });
-});
 
+    $("#select3").change(function() {
+        var val = $("#select3").val();
+        chart4.destroy();
+        $.getJSON( dataBox4[3], function(metadata) {
+            // Draw a visualization
+            drawGraph(dataBox4[0], dataBox4[1], dataBox4[2], metadata, val, dataBox4[3], dataBox4[4]);
+        });
+    });
+
+    return;
+};
 
 /**
  * Call the good method to draw the graph, timeline or map
@@ -471,6 +480,8 @@ function defineLinks(type, position, metadataLink){
     $(info).attr("href", "visu.php?type=info&resource=" + metadataLink);
 }
 
+
+init();
 
 
 
