@@ -448,6 +448,50 @@ function drawTable(dataJson, metadata, metadataLink, position) {
     });   
 };
 
+/**
+ * Draw map
+ * 
+ * @param dataJson
+ * @param metadata
+ * @param metadataLink
+ * @param position
+ */
+function drawMap(dataJson, metadata, metadataLink, position) {
+    var main_div = "panel-body-" + position;
+    var courrent_select = "#select" + position;
+    var courrent_myChart = "#myChart" + position;
+    var new_position = position + 1;
+    var courrent_box = "#box" + new_position;
+    var box_title = metadata.table.dataComposition.title;
+    var select = metadata.table.dataComposition.selectList;
+
+    // Hide select and chart div
+    $(courrent_select).hide();
+    $(courrent_myChart).hide();
+
+    // Add the title
+    $(courrent_box).find("h4").text(box_title);
+
+    //Coordonnées du centre de la carte lors de l'initialisation de la vue.
+    var laRochelle = ol.proj.fromLonLat([-1.15, 46.15]);
+
+    //Création de la vue avec initialisation du centre (variable déclarée ligne précédente) et du niveau de zoom.
+    var view = new ol.View({
+        center: laRochelle,
+        zoom: 13
+    });
+
+    //Création de la carte avec l'élément HTML visé (target), la couche à afficher et la vue de départ.
+    var map = new ol.Map({
+        target: 'seeMoreChart' + position,
+        layers: [
+            new ol.layer.Tile({
+                source: new ol.source.OSM()
+            })
+        ],
+        view: view
+    });
+}
 
 /**
  * Get a random color for chart
