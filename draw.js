@@ -450,7 +450,7 @@ function drawTable(dataJson, metadata, metadataLink, position) {
 
 /**
  * Draw map
- * 
+ *
  * @param dataJson
  * @param metadata
  * @param metadataLink
@@ -492,6 +492,40 @@ function drawMap(dataJson, metadata, metadataLink, position) {
         view: view
     });
 }
+
+
+/**
+ * Fonction pour dessiner la timeline et l'adapter aux données.
+ * @param dataJson
+ * @param metadata
+ * @param metadataLink
+ */
+function drawTimeLine(dataJson, metadata, metadataLink){
+    var timeLine = document.getElementById("timeControl");
+    var datalist = document.getElementById("tickList");
+
+    if (null != timeLine){
+        timeLine.setAttribute("min","2000");
+        timeLine.setAttribute("max","2017");
+        timeLine.setAttribute("value","2010");
+        timeLine.setAttribute("list","tickList");
+
+        //Dessiner les étapes intermédiaires
+        var min = timeLine.getAttribute("min");
+        var max = timeLine.getAttribute("max");
+
+        for (var i = min; i <= max;i++){
+            var option = document.createElement("option")
+            var text = document.createTextNode(i);
+            option.appendChild(text);
+            datalist.appendChild(option);
+        }
+    }
+
+
+
+};
+
 
 /**
  * Get a random color for chart
