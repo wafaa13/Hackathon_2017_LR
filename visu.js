@@ -71,6 +71,7 @@ $(document).ready(function(){
 	    var opts = {};
 	    opts["legend"] = true;
         opts["link"] = false;
+        opts["height"] = true;
 
         // Graph type
         console.log(data.metadata)

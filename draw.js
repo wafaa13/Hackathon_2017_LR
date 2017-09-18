@@ -339,6 +339,17 @@ function drawGraph(dataJson, randGraph, position, metadata, selectVal, metadataL
     var responsive = false;
     Chart.defaults.global.legend.position = "bottom";
 
+    //Height of canvas
+    if(opts.height){
+
+        var courentChart = "myChart" + position ;
+        var elementTemp = document.getElementById(courentChart);
+        if(dataJson.length >= 50){
+            elementTemp.width = 1000;
+            elementTemp.height = dataJson.length * 13;
+            console.log('here')
+        }
+    }
     // DRAW Chart
     chart = new Chart(ctx, {
         type: randGraph,
