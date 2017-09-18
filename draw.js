@@ -500,24 +500,35 @@ function drawMap(dataJson, metadata, metadataLink, position) {
  * @param metadata
  * @param metadataLink
  */
-function drawTimeLine(dataJson, metadata, metadataLink){
-    //TODO : récupérer dynamiquement les années. Si plus que 2, récupérer min et max pour les bornes de la range.
+function drawTimeLine(listYear){
+    //Les années sont récupérées par Ahmed et Claire lors du check ou du uncheck
+
+    //Problème relevé : Les ticks n'apparaissent que pour les années précisées, mais on peut quand même sélectionner les années "entre".
+
+    var listYearNumber=[];
+    for (var i in listYear){
+        listYearNumber.push(Number(listYear[i]));
+    }
+
+    var anneeMin = Math.min.apply(Math, listYearNumber);
+    var anneeMax = Math.max.apply(Math, listYearNumber);
+
     var timeLine = document.getElementById("timeControl");
     var datalist = document.getElementById("tickList");
 
     if (null != timeLine){
-        timeLine.setAttribute("min","2000");
-        timeLine.setAttribute("max","2017");
-        timeLine.setAttribute("value","2010");
+        timeLine.setAttribute("min",anneeMin);
+        timeLine.setAttribute("max",anneeMax);
+        timeLine.setAttribute("value",anneeMax);
         timeLine.setAttribute("list","tickList");
 
         //Dessiner les étapes intermédiaires
         var min = timeLine.getAttribute("min");
         var max = timeLine.getAttribute("max");
 
-        for (var i = min; i <= max;i++){
-            var option = document.createElement("option")
-            var text = document.createTextNode(i);
+        for (i in listYearNumber){
+            var option = document.createElement("option");
+            var text = document.createTextNode(listYearNumber[i]);
             option.appendChild(text);
             datalist.appendChild(option);
         }
