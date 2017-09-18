@@ -501,6 +501,7 @@ function drawMap(dataJson, metadata, metadataLink, position) {
  * @param metadataLink
  */
 function drawTimeLine(dataJson, metadata, metadataLink){
+    //TODO : récupérer dynamiquement les années. Si plus que 2, récupérer min et max pour les bornes de la range.
     var timeLine = document.getElementById("timeControl");
     var datalist = document.getElementById("tickList");
 
@@ -521,9 +522,6 @@ function drawTimeLine(dataJson, metadata, metadataLink){
             datalist.appendChild(option);
         }
     }
-
-
-
 };
 
 
