@@ -491,7 +491,7 @@ function drawMap(dataJson, metadata, metadataLink, position) {
         ],
         view: view
     });
-}
+};
 
 /**
  * Get a random color for chart

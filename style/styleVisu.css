@@ -1,8 +1,15 @@
 
 #exTab2 {
-    width: 100%;
+    width: 55%;
     padding: 0;
+	float: left;
 }
+
+#donnees {
+  width:44%;
+  float: left;
+}
+
 #box1 {
     width: 100%;
     margin-left: 0;

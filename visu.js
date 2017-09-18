@@ -23,6 +23,25 @@ $(document).ready(function(){
 			});
 		}
 		$(".boxVisu").children("h4").hide();
+		
+		
+	
+		// accordian
+		$('.accordion-toggle').on('click', function(){
+			$(this).closest('.panel-group').children().each(function(){
+			$(this).find('>.panel-heading').removeClass('active');
+			 });
+
+			$(this).closest('.panel-heading').toggleClass('active');
+		});
+		$(".checkData").on("click",function() {
+			if($('input',this).is(':checked')){
+
+				var nameData = $('input', this).attr("name");
+
+				getData(nameData);
+			}
+		});
 	};
 
 	/**
@@ -30,13 +49,16 @@ $(document).ready(function(){
 	 *
 	 * @return
 	 */
- 	function getData() {
+ 	function getData(nameData) {
 	 	
-	 	// Get url datas
-	    var resource = window.location.href.split('resource=');
-	    res = resource[1].split('#');
-	    resource = res[0];
-
+		if(nameData !== null) {
+			var resource = nameData;
+		} else {
+			// Get url datas
+			var resource = window.location.href.split('resource=');
+			res = resource[1].split('#');
+			resource = res[0];
+		}
 	   	if(resource == "disponibilite_parking") {
 	    	BddLink = '&db=stationnement&table=disponibilite_parking&format=json';
 
@@ -53,6 +75,12 @@ $(document).ready(function(){
 
 	    ajaxRequest(BddLink, 0, function(data){
     		_drawVisu(data);
+						console.log(data);
+
+									console.log(data.metadata);
+
+			console.log(data.metadata.dataType);
+			_enablePanel(data.metadata.dataType);
     	});
 
     	return;
@@ -73,7 +101,6 @@ $(document).ready(function(){
         opts["link"] = false;
 
         // Graph type
-        console.log(data.metadata)
         var graph = data.metadata.graph.possibleGraphs[0];
 
 		// Draw a visualization
@@ -86,8 +113,40 @@ $(document).ready(function(){
 
         return;
 	};
-
+	
+	function _enablePanel(datatype) {
+		if(datatype == "HistorisedNotLocalisable"){
+			$('#tab3').hide();
+			$('#tab1').show();
+			$('#tab2').show();
+			$('#tab4').show();
+		}
+		else if(datatype == "NotHistorisedLocalisable"){
+			$('#tab4').hide();
+			$('#tab1').show();
+			$('#tab2').show();
+			$('#tab3').show();
+		}
+		else if(datatype == "NotHistorisedNotLocalisable"){
+			$('#tab3').hide();
+			$('#tab4').hide();
+			$('#tab1').show();
+			$('#tab2').show();
+		}
+		else if(datatype == "HistorisedLocalisable"){
+			$('#tab1').show();
+			$('#tab2').show();
+			$('#tab3').show();
+			$('#tab4').show();
+		}
+		else{
+			console.log('click');
+			$('#tab1').hide();
+			$('#tab2').hide();
+			$('#tab3').hide();
+			$('#tab4').hide();
+		}
+	}
     init();
-    getData();
 
 });
