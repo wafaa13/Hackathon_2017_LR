@@ -36,9 +36,7 @@ $(document).ready(function(){
 		});
 		$(".checkData").on("click",function() {
 			if($('input',this).is(':checked')){
-
 				var nameData = $('input', this).attr("name");
-
 				getData(nameData);
 			}
 		});
@@ -75,11 +73,6 @@ $(document).ready(function(){
 
 	    ajaxRequest(BddLink, 0, function(data){
     		_drawVisu(data);
-						console.log(data);
-
-									console.log(data.metadata);
-
-			console.log(data.metadata.dataType);
 			_enablePanel(data.metadata.dataType);
     	});
 
@@ -140,7 +133,6 @@ $(document).ready(function(){
 			$('#tab4').show();
 		}
 		else{
-			console.log('click');
 			$('#tab1').hide();
 			$('#tab2').hide();
 			$('#tab3').hide();
