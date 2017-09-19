@@ -77,11 +77,13 @@ $(document).ready(function(){
         console.log(data.metadata)
         var graph = data.metadata.graph.possibleGraphs[0];
 
+        var listYear=['2000','2012','2017'];
+
 		// Draw a visualization
         drawGraph(data.data, graph, 0, data.metadata, 0, data.linkMetadata, opts);
         drawTable(data.data, data.metadata, data.linkMetadata, 1);
         //drawMap(obj.opendata.answer.data, 3, metadata, MetadataLink);
-        //drawTimeLine(obj.opendata.answer.data, 4, metadata, MetadataLink);
+        drawTimeLine(listYear);
         //Info
         //Download link
 
