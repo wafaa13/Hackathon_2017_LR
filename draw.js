@@ -318,16 +318,6 @@ function drawGraph(dataJson, randGraph, position, metadata, selectVal, metadataL
     // Add the title
     $(myBox).find("h4").text(titleCanvas);
     
-/*
-    if($(myChart).height() == "500") {
-        console.log('ici')
-        var ctx = $(myChart).get(0).getContext('2d');
-        ctx.canvas.width = 300;
-        ctx.canvas.height = 20 * keys.length;
-        responsive = true;
-        console.log('la')
-    }*/
-
     // Define chart context 
     ctx = $(myChart);
 
@@ -344,10 +334,10 @@ function drawGraph(dataJson, randGraph, position, metadata, selectVal, metadataL
 
         var courentChart = "myChart" + position ;
         var elementTemp = document.getElementById(courentChart);
-        if(dataJson.length >= 50){
+
+        if(dataJson.length >= 50) {
             elementTemp.width = 1000;
             elementTemp.height = dataJson.length * 13;
-            console.log('here')
         }
     }
     // DRAW Chart
