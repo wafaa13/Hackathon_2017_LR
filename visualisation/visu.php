@@ -387,7 +387,22 @@
                   </div>
               </div>
             </div>
+<<<<<<< HEAD
 </div>			
+=======
+
+            <div id="timeLine">
+                <input id="timeControl" type="range" step="1" onchange="showValue()"/>
+                <output id="show"></output>
+                <datalist id="tickList"></datalist>
+                <script>
+                    function showValue(){
+                            var valof = $('#timeControl').val();
+                            $('#show').text(valof);
+                    }
+                </script>
+            </div>
+>>>>>>> 3a398c89fecad120a73b8eb4fbb034bf460b33f4
 
             <div class="page-header">
                 <h2>Partager </h2>
