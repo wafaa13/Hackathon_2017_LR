@@ -92,6 +92,7 @@ $(document).ready(function(){
 	    var opts = {};
 	    opts["legend"] = true;
         opts["link"] = false;
+        opts["height"] = true;
 
         // Graph type
         var graph = data.metadata.graph.possibleGraphs[0];
