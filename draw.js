@@ -76,7 +76,7 @@ function drawRandomVisualization(dataJson, position, metadata, metadataLink) {
     var HistorisedLocalisableVisualisation = ["graph", "timeline", "map"];
     var NotHistorisedNotLocalisableVisualisation = ["graph"];
     var NotHistorisedLocalisableVisualisation = ["graph", /*"map",*/ "table"];
-    var HistorisedNotLocalisableVisualisation = ["graph", "table"]; //timeline
+    var HistorisedNotLocalisableVisualisation = ["graph", "table","timeline"]; //timeline
 
     // Call the good method to draw the graph, timeline or map
     switch (metadata.dataType) {
@@ -335,7 +335,12 @@ function drawGraph(dataJson, randGraph, position, metadata, selectVal, metadataL
         var courentChart = "myChart" + position ;
         var elementTemp = document.getElementById(courentChart);
 
-        if(dataJson.length >= 50) {
+        if(dataJson.length < 50 && (randGraph == "pie" || randGraph == "doughnut")) {
+            elementTemp.width = 600;
+            elementTemp.height = 500;
+            
+        }
+        else if (dataJson.length >= 50){
             elementTemp.width = 1000;
             elementTemp.height = dataJson.length * 13;
         }
@@ -447,6 +452,7 @@ function drawTable(dataJson, metadata, metadataLink, position) {
             document.getElementById("table_element" + position).appendChild(tr);     
         });
     });   
+
 };
 
 /**
