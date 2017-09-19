@@ -182,7 +182,19 @@
                       <h3>Affichage des liens de téléchargement</h3>
                   </div>
               </div>
-            </div>             
+            </div>
+
+            <div id="timeLine">
+                <input id="timeControl" type="range" step="1" onchange="showValue()"/>
+                <output id="show"></output>
+                <datalist id="tickList"></datalist>
+                <script>
+                    function showValue(){
+                            var valof = $('#timeControl').val();
+                            $('#show').text(valof);
+                    }
+                </script>
+            </div>
 
             <div class="page-header">
                 <h2>Partager </h2>
