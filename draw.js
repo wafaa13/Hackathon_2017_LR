@@ -501,7 +501,7 @@ function drawMap(dataJson, metadata, metadataLink, position) {
         ],
         view: view
     });
-}
+};
 
 
 /**

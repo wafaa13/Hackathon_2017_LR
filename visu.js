@@ -23,6 +23,50 @@ $(document).ready(function(){
 			});
 		}
 		$(".boxVisu").children("h4").hide();
+		
+		var resource = window.location.href.split('resource=');
+		res = resource[1].split('#');
+		console.log(res[0]);
+		
+		if(res[0]) {
+			console.log('resoure ok');
+			_checkbox(res[0]);
+			getData(res[0]);
+		}
+	
+		// accordian
+		$('.accordion-toggle').on('click', function(){
+			$(this).closest('.panel-group').children().each(function(){
+			$(this).find('>.panel-heading').removeClass('active');
+			 });
+
+			$(this).closest('.panel-heading').toggleClass('active');
+		});
+		
+		$(".checkData").on("click",function() {
+			if($('input',this).is(':checked')){
+
+				// Destroy canvas
+				var canvas = document.getElementById('myChart0');
+				var context = canvas.getContext('2d');
+				canvas.remove();
+
+				// Create new canvas
+				var newCanvas = document.createElement("canvas");
+				newCanvas.id = 'myChart0';
+				newCanvas.class = 'chart';
+				newCanvas.height = 2000;
+				newCanvas.width = 1600;
+
+				// Append canvas to document
+				div = document.getElementById('seeMoreChart0');
+				div.appendChild(newCanvas);
+
+				// Call getData methode to draw visualisation
+				var nameData = $('input', this).attr("name");
+				getData(nameData);
+			}
+		});
 	};
 
 	/**
@@ -30,13 +74,16 @@ $(document).ready(function(){
 	 *
 	 * @return
 	 */
- 	function getData() {
+ 	function getData(nameData) {
 	 	
-	 	// Get url datas
-	    var resource = window.location.href.split('resource=');
-	    res = resource[1].split('#');
-	    resource = res[0];
-
+		if(nameData !== null) {
+			var resource = nameData;
+		} else {
+			// Get url datas
+			var resource = window.location.href.split('resource=');
+			res = resource[1].split('#');
+			resource = res[0];
+		}
 	   	if(resource == "disponibilite_parking") {
 	    	BddLink = '&db=stationnement&table=disponibilite_parking&format=json';
 
@@ -53,9 +100,15 @@ $(document).ready(function(){
 
 	    ajaxRequest(BddLink, 0, function(data){
     		_drawVisu(data);
+			_enablePanel(data.metadata.dataType);
     	});
 
     	return;
+	};
+	
+	function _checkbox(name){
+		console.log("je suis dans la fonction");
+		$( "input[name=" + name + "]" ).prop('checked', true);
 	};
 
 	/**
@@ -74,7 +127,6 @@ $(document).ready(function(){
         opts["height"] = true;
 
         // Graph type
-        console.log(data.metadata)
         var graph = data.metadata.graph.possibleGraphs[0];
 
 		// Draw a visualization
@@ -87,8 +139,39 @@ $(document).ready(function(){
 
         return;
 	};
-
+	
+	function _enablePanel(datatype) {
+		if(datatype == "HistorisedNotLocalisable"){
+			$('#tab3').hide();
+			$('#tab1').show();
+			$('#tab2').show();
+			$('#tab4').show();
+		}
+		else if(datatype == "NotHistorisedLocalisable"){
+			$('#tab4').hide();
+			$('#tab1').show();
+			$('#tab2').show();
+			$('#tab3').show();
+		}
+		else if(datatype == "NotHistorisedNotLocalisable"){
+			$('#tab3').hide();
+			$('#tab4').hide();
+			$('#tab1').show();
+			$('#tab2').show();
+		}
+		else if(datatype == "HistorisedLocalisable"){
+			$('#tab1').show();
+			$('#tab2').show();
+			$('#tab3').show();
+			$('#tab4').show();
+		}
+		else{
+			$('#tab1').hide();
+			$('#tab2').hide();
+			$('#tab3').hide();
+			$('#tab4').hide();
+		}
+	}
     init();
-    getData();
 
 });
