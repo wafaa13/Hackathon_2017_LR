@@ -76,7 +76,7 @@ function drawRandomVisualization(dataJson, position, metadata, metadataLink) {
     var HistorisedLocalisableVisualisation = ["graph", "timeline", "map"];
     var NotHistorisedNotLocalisableVisualisation = ["graph"];
     var NotHistorisedLocalisableVisualisation = ["graph", /*"map",*/ "table"];
-    var HistorisedNotLocalisableVisualisation = ["graph", "table"]; //timeline
+    var HistorisedNotLocalisableVisualisation = ["graph", "table","timeline"]; //timeline
 
     // Call the good method to draw the graph, timeline or map
     switch (metadata.dataType) {
@@ -335,7 +335,12 @@ function drawGraph(dataJson, randGraph, position, metadata, selectVal, metadataL
         var courentChart = "myChart" + position ;
         var elementTemp = document.getElementById(courentChart);
 
-        if(dataJson.length >= 50) {
+        if(dataJson.length < 50 && (randGraph == "pie" || randGraph == "doughnut")) {
+            elementTemp.width = 600;
+            elementTemp.height = 500;
+            
+        }
+        else if (dataJson.length >= 50){
             elementTemp.width = 1000;
             elementTemp.height = dataJson.length * 13;
         }
@@ -447,6 +452,10 @@ function drawTable(dataJson, metadata, metadataLink, position) {
             document.getElementById("table_element" + position).appendChild(tr);     
         });
     });   
+    if(metadata.timeline.year) {
+        console.log("timeline")
+        //drawTimeLine(metadata.timeline.year)
+    }
 };
 
 /**
@@ -501,38 +510,59 @@ function drawMap(dataJson, metadata, metadataLink, position) {
  * @param metadata
  * @param metadataLink
  */
-function drawTimeLine(listYear){
-    //Les années sont récupérées par Ahmed et Claire lors du check ou du uncheck
+function drawTimeLine(dataType, dataName){
 
-    //Problème relevé : Les ticks n'apparaissent que pour les années précisées, mais on peut quand même sélectionner les années "entre".
+    if(dataType === "HistorisedNotLocalisable" || dataType === "HistorisedLocalisable") {
 
-    var listYearNumber=[];
-    for (var i in listYear){
-        listYearNumber.push(Number(listYear[i]));
-    }
+        var listYear = [];
 
-    var anneeMin = Math.min.apply(Math, listYearNumber);
-    var anneeMax = Math.max.apply(Math, listYearNumber);
-
-    var timeLine = document.getElementById("timeControl");
-    var datalist = document.getElementById("tickList");
-
-    if (null != timeLine){
-        timeLine.setAttribute("min",anneeMin);
-        timeLine.setAttribute("max",anneeMax);
-        timeLine.setAttribute("value",anneeMax);
-        timeLine.setAttribute("list","tickList");
-
-        //Dessiner les étapes intermédiaires
-        var min = timeLine.getAttribute("min");
-        var max = timeLine.getAttribute("max");
-
-        for (i in listYearNumber){
-            var option = document.createElement("option");
-            var text = document.createTextNode(listYearNumber[i]);
-            option.appendChild(text);
-            datalist.appendChild(option);
+        if (dataName === "population_2008") {
+            listYear = ['2000','2012','2017'];
+        } else if (dataName === "bp_2017_fonction") {
+            listYear = ['2000','2012', '2014', '2017'];
+        } else {
+            // Affiche pas la timeline
+            console.log("Faire un hide")
         }
+
+        //Les années sont récupérées par Ahmed et Claire lors du check ou du uncheck
+
+        //Problème relevé : Les ticks n'apparaissent que pour les années précisées, mais on peut quand même sélectionner les années "entre".
+        
+        var listYearNumber=[];
+        for (var i in listYear){
+            listYearNumber.push(Number(listYear[i]));
+        }
+
+        var anneeMin = Math.min.apply(Math, listYearNumber);
+        var anneeMax = Math.max.apply(Math, listYearNumber);
+
+        var timeLine = document.getElementById("timeControl");
+        var datalist = document.getElementById("tickList");
+
+        if (null != timeLine){
+            timeLine.setAttribute("min",anneeMin);
+            timeLine.setAttribute("max",anneeMax);
+            timeLine.setAttribute("value",anneeMax);
+            timeLine.setAttribute("list","tickList");
+
+            //Dessiner les étapes intermédiaires
+            var min = timeLine.getAttribute("min");
+            var max = timeLine.getAttribute("max");
+
+            for (i in listYearNumber){
+                var option = document.createElement("option");
+                var text = document.createTextNode(listYearNumber[i]);
+                option.appendChild(text);
+                datalist.appendChild(option);
+            }
+        }
+
+        $("#timeControl").show();
+
+    } else {
+        $("#timeControl").hide();
+        console.log('hide la time line')
     }
 };
 
