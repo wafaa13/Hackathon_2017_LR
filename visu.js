@@ -24,7 +24,15 @@ $(document).ready(function(){
 		}
 		$(".boxVisu").children("h4").hide();
 		
+		var resource = window.location.href.split('resource=');
+		res = resource[1].split('#');
+		console.log(res[0]);
 		
+		if(res[0]) {
+			console.log('resoure ok');
+			_checkbox(res[0]);
+			getData(res[0]);
+		}
 	
 		// accordian
 		$('.accordion-toggle').on('click', function(){
@@ -34,9 +42,13 @@ $(document).ready(function(){
 
 			$(this).closest('.panel-heading').toggleClass('active');
 		});
+		
+		
+		
 		$(".checkData").on("click",function() {
 			if($('input',this).is(':checked')){
 				var nameData = $('input', this).attr("name");
+				$("#myChart0").destroy();
 				getData(nameData);
 			}
 		});
@@ -77,6 +89,11 @@ $(document).ready(function(){
     	});
 
     	return;
+	};
+	
+	function _checkbox(name){
+		console.log("je suis dans la fonction");
+		$( "input[name=" + name + "]" ).prop('checked', true);
 	};
 
 	/**

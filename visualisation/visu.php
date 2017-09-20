@@ -266,7 +266,7 @@
 								</div>
 								<div class="checkData">
 									<input type="checkbox" id="tj2" name="interest" value="tj2">
-									<label for="tj2">table jeunesse, sport et culture 1</label>
+									<label for="tj2">table jeunesse, sport et culture 2</label>
 								</div>
                             </div>
                         </div>
@@ -310,7 +310,7 @@
 								</div>
 								<div>
 									<input type="checkbox" id="tu2" name="interest" value="tu2">
-									<label for="tu2">table urbanisme et politique de la ville 1</label>
+									<label for="tu2">table urbanisme et politique de la ville 2</label>
 								</div>
                             </div>
                         </div>
@@ -387,9 +387,6 @@
                   </div>
               </div>
             </div>
-<<<<<<< HEAD
-</div>			
-=======
 
             <div id="timeLine">
                 <input id="timeControl" type="range" step="1" onchange="showValue()"/>
@@ -402,7 +399,6 @@
                     }
                 </script>
             </div>
->>>>>>> 3a398c89fecad120a73b8eb4fbb034bf460b33f4
 
             <div class="page-header">
                 <h2>Partager </h2>
