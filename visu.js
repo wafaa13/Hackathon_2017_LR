@@ -43,12 +43,27 @@ $(document).ready(function(){
 			$(this).closest('.panel-heading').toggleClass('active');
 		});
 		
-		
-		
 		$(".checkData").on("click",function() {
 			if($('input',this).is(':checked')){
+
+				// Destroy canvas
+				var canvas = document.getElementById('myChart0');
+				var context = canvas.getContext('2d');
+				canvas.remove();
+
+				// Create new canvas
+				var newCanvas = document.createElement("canvas");
+				newCanvas.id = 'myChart0';
+				newCanvas.class = 'chart';
+				newCanvas.height = 2000;
+				newCanvas.width = 1600;
+
+				// Append canvas to document
+				div = document.getElementById('seeMoreChart0');
+				div.appendChild(newCanvas);
+
+				// Call getData methode to draw visualisation
 				var nameData = $('input', this).attr("name");
-				$("#myChart0").destroy();
 				getData(nameData);
 			}
 		});
