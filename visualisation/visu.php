@@ -55,7 +55,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li><a href="demarche.php">La démarche</a></li>
-            <li><a href="visuIndex.php">Visualisation des données</a></li>
+            <li><a href="visu.php">Visualisation des données</a></li>
             <li><a href="utiliserPlateforme.php">Utiliser la plateforme</a></li>
             <li><a href="contactezNous.php">Contactez-nous</a></li>
           </ul>
@@ -115,19 +115,19 @@
 
             <div id="titlePage" class="page-header">
             </br>
-                <h2> Visualisation - 
+                <h2> Visualisation 
                    <?php 
                     if ($_GET['resource'] == disponibilite_parking) {
-                        echo "Parkings - Places disponibles"; 
+                        echo " - Parkings - Places disponibles"; 
                     } 
                     if ($_GET['resource'] == archive_fiche) {
-                        echo "Archives"; 
+                        echo " - Archives"; 
                     }
                     if ($_GET['resource'] == bp_2017_fonction) {
-                        echo "Budget prévisionnel - 2017 fonction"; 
+                        echo " - Budget prévisionnel - 2017 fonction"; 
                     }
                     if ($_GET['resource'] == population_2008) {
-                        echo "Population 2008"; 
+                        echo " - Population 2008"; 
                     }?>
                 </h2> 
             </div>
@@ -327,9 +327,8 @@
                         <li id="tab1"><a href="#1" data-toggle="tab">Graphe</a></li>
                         <li id="tab2"><a href="#2" data-toggle="tab">Tableau</a></li>
                         <li id="tab3"><a href="#3" data-toggle="tab">Carte</a></li>
-                        <li id="tab4"><a href="#4" data-toggle="tab">Ligne temporelle</a></li>
-                        <li id="tab5"><a href="#5" data-toggle="tab">Infos</a></li>
-                        <li id="tab6"><a href="#6" data-toggle="tab">Télécharger</a></li>
+                        <li id="tab4"><a href="#4" data-toggle="tab">Infos</a></li>
+                        <li id="tab5"><a href="#5" data-toggle="tab">Télécharger</a></li>
                     </ul>
 
                     <div class="tab-content ">
@@ -369,21 +368,9 @@
                             </div>
                       </div>
                       <div class="tab-pane" id="4">
-                            <div id='box4' class="panel panel-default">
-                                <h4 class="panel-title pull-left"></h4>
-
-                                <div id="panel-body-3" class="panel-body form-group panelBody">
-                                    </br>
-                                    <select class="form-control" id="select3"></select>
-                                    </br>
-                                    <a id="seeMoreChart3"><canvas id="myChart3" class="chart"></canvas></a>
-                                </div>
-                            </div>
-                      </div>
-                      <div class="tab-pane" id="5">
                           <h3>Affichage des informations sur la donnée</h3>
                       </div>
-                      <div class="tab-pane" id="6">
+                      <div class="tab-pane" id="5">
                           <h3>Affichage des liens de téléchargement</h3>
                       </div>
                   </div>
@@ -489,7 +476,7 @@
             <footer>
 
             </footer>
-            
+
         </div>
     </body>
 
@@ -511,6 +498,7 @@
             $("#5").addClass("active");
             $("#tab5").addClass("active");
         }
+
     </script>
 
 

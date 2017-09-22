@@ -26,26 +26,6 @@ body {
 	top: 120px;
 	margin-left: 30%;
 }
-#box1 {
-    width: 100%;
-    margin-left: 0;
-	margin-right: 0;
-}
-#box2 {
-    width: 100%;
-    margin-left: 0;
-	margin-right: 0;
-}
-#box3 {
-    width: 100%;
-    margin-left: 0;
-	margin-right: 0;
-}
-#box4 {
-    width: 100%;
-    margin-left: 0;
-	margin-right: 0;
-}
 #my_table1 {
 	margin-top: 25px;
 	overflow-y: scroll;

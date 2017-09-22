@@ -31,7 +31,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li><a href="demarche.php">La démarche</a></li>
-            <li><a href="visuIndex.php">Visualisation des données</a></li>
+            <li><a href="visu.php">Visualisation des données</a></li>
             <li><a href="utiliserPlateforme.php">Utiliser la plateforme</a></li>
             <li><a href="contactezNous.php">Contactez-nous</a></li>
           </ul>
