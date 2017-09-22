@@ -11,9 +11,6 @@
     margin-left: -10px;
     margin-right: -10px;
   }
-
-  
-
 }
 
 /* md */
@@ -94,7 +91,6 @@
   ul.social_icons li{
     margin-right: 0;
   }
-
 }
 
 
@@ -291,13 +287,4 @@
   .post_reply_comments {
     padding-left: 20px;
   }
-    
-
 }
-
-/* XS Portrait */
-@media (max-width: 480px) {
-
-
-}
-

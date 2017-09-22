@@ -113,7 +113,7 @@
             </div>
             <div class="page-header"></div>-->
 
-            <div class="page-header">
+            <div id="titlePage" class="page-header">
             </br>
                 <h2> Visualisation - 
                    <?php 
@@ -135,363 +135,363 @@
             </br>
 			
 			<div class="bord">
-			<div class="row" id="donnees">
-		<div id="tableDonnees" class="col-xs-12 col-sm-8 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-            <h2>Table de données</h2>
-            <div class="accordion">
-                <div class="panel-group" id="accordion1">
-					<div class="panel panel-default">
-						<div class="panel-heading active">
-							<h3 class="panel-title">
-								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse6">
-									Citoyenneté
-								</a>
-							</h3>
-						</div>
-						<div id="collapse6" class="panel-collapse collapse">
-							<div class="panel-body">
-								<div class="checkData">
-									<input type="checkbox" id="tc1" name="archive_fiche" value="tc1">
-									<label for="tc1">Archive</label>
-								</div>
-								<div class="checkData">
-								<input type="checkbox" id="tc2" name="population_2008" value="tc2">
-									<label for="tc2">INSEE</label>
-								</div>
-							</div>
-						</div>
-                    </div>
-						  
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-							<h3 class="panel-title">
-								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse7">
-									Déplacement
-								</a>
-							</h3>
-                        </div>
-						<div id="collapse7" class="panel-collapse collapse">
-							<div class="panel-body">
-								<div class="checkData">
-									<input type="checkbox" id="td1" name="disponibilite_parking" value="td1">
-									<label for="td1">Parking</label>
-								</div>
-								<div class="checkData">
-									<input type="checkbox" id="td2" name="interest" value="td2">
-									<label for="td2">table déplacement 2</label>
-								</div>
-							</div>
-                        </div>
-                    </div>
-                        
-					<div class="panel panel-default">
-                        <div class="panel-heading">
-							<h3 class="panel-title">
-								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo1">
-									Espace public
-								</a>
-							</h3>
-                        </div>
-                        <div id="collapseTwo1" class="panel-collapse collapse">
-							<div class="panel-body">
-								<div class="checkData">
-									<input type="checkbox" id="te1" name="interest" value="te1">
-									<label for="te1">table espace public 1</label>
-								</div>
-								<div class="checkData">
-									<input type="checkbox" id="te2" name="interest" value="te2">
-									<label for="te2">table espace public 2</label>
-								</div>
-							</div>
-						</div>
-                    </div>
-					  
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-							<h3 class="panel-title">
-								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne1">
-									Finance
-								</a>
-							</h3>
-                        </div>
-						<div id="collapseOne1" class="panel-collapse collapse">
-							<div class="panel-body">
-								<div class="checkData">
-									<input type="checkbox" id="tf1" name="bp_2017_fonction" value="tf1">
-									<label for="tf1">Budget</label>
-								</div>
-								<div class="checkData">
-									<input type="checkbox" id="tf2" name="interest" value="tf2">
-									<label for="tf2">table finance 2</label>
-								</div>
-							</div>
-                        </div>
-                    </div>
-
-					<div class="panel panel-default">
-                        <div class="panel-heading">
-							<h3 class="panel-title">
-								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse8">
-									Gestion interne
-								</a>
-							</h3>
-                        </div>
-                        <div id="collapse8" class="panel-collapse collapse">
-							<div class="panel-body">
-								<div class="checkData">
-									<input type="checkbox" id="tg1" name="interest" value="tg1">
-									<label for="tg1">table gestion interne 1</label>
-								</div>
-								<div class="checkData">
-									<input type="checkbox" id="tg2" name="interest" value="tg2">
-									<label for="tg2">table gestion interne 2</label>
-								</div>
+			    <div class="row" id="donnees">
+		            <div id="tableDonnees" class="col-xs-12 col-sm-8 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <h2 id="titleLateralMenu">Table de données</h2>
+                        <div class="accordion">
+                        <div class="panel-group" id="accordion1">
+        					<div class="panel panel-default">
+        						<div class="panel-heading active">
+        							<h3 class="panel-title">
+        								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse6">
+        									Citoyenneté
+        								</a>
+        							</h3>
+        						</div>
+        						<div id="collapse6" class="panel-collapse collapse">
+        							<div class="panel-body">
+        								<div class="checkData">
+        									<input type="checkbox" id="tc1" name="archive_fiche" value="tc1">
+        									<label for="tc1">Archive</label>
+        								</div>
+        								<div class="checkData">
+        								<input type="checkbox" id="tc2" name="population_2008" value="tc2">
+        									<label for="tc2">INSEE</label>
+        								</div>
+        							</div>
+        						</div>
                             </div>
-                        </div>
-                    </div>
-
-					<div class="panel panel-default">
-                        <div class="panel-heading">
-							<h3 class="panel-title">
-								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse2">
-									Jeunesse, sport et culture
-								</a>
-							</h3>
-                        </div>
-                        <div id="collapse2" class="panel-collapse collapse">
-							<div class="panel-body">
-								<div  class="checkData">
-									<input type="checkbox" id="tj1" name="interest" value="tj1">
-									<label for="tj1">table jeunesse, sport et culture 1</label>
-								</div>
-								<div class="checkData">
-									<input type="checkbox" id="tj2" name="interest" value="tj2">
-									<label for="tj2">table jeunesse, sport et culture 2</label>
-								</div>
+        						  
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+        							<h3 class="panel-title">
+        								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse7">
+        									Déplacement
+        								</a>
+        							</h3>
+                                </div>
+        						<div id="collapse7" class="panel-collapse collapse">
+        							<div class="panel-body">
+        								<div class="checkData">
+        									<input type="checkbox" id="td1" name="disponibilite_parking" value="td1">
+        									<label for="td1">Parking</label>
+        								</div>
+        								<div class="checkData">
+        									<input type="checkbox" id="td2" name="interest" value="td2">
+        									<label for="td2">table déplacement 2</label>
+        								</div>
+        							</div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-							<h3 class="panel-title">
-								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse3">
-									Référenciel géographique
-								</a>
-							</h3>
-                        </div>
-                        <div id="collapse3" class="panel-collapse collapse">
-							<div class="panel-body">
-								<div class="checkData">
-									<input type="checkbox" id="tr1" name="interest" value="tr1">
-									<label for="tr1">table référenciel géographique 1</label>
-								</div>
-								<div class="checkData">
-									<input type="checkbox" id="tr2" name="interest" value="tr2">
-									<label for="tr2">table référenciel géographique 2</label>
-								</div>
+                                
+        					<div class="panel panel-default">
+                                <div class="panel-heading">
+        							<h3 class="panel-title">
+        								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo1">
+        									Espace public
+        								</a>
+        							</h3>
+                                </div>
+                                <div id="collapseTwo1" class="panel-collapse collapse">
+        							<div class="panel-body">
+        								<div class="checkData">
+        									<input type="checkbox" id="te1" name="interest" value="te1">
+        									<label for="te1">table espace public 1</label>
+        								</div>
+        								<div class="checkData">
+        									<input type="checkbox" id="te2" name="interest" value="te2">
+        									<label for="te2">table espace public 2</label>
+        								</div>
+        							</div>
+        						</div>
                             </div>
-                        </div>
-                    </div>
-
-					<div class="panel panel-default">
-                        <div class="panel-heading">
-							<h3 class="panel-title">
-								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse9">
-									Urbanisme et politique de la ville
-								</a>
-							</h3>
-                        </div>
-                        <div id="collapse9" class="panel-collapse collapse">
-							<div class="panel-body">
-								<div>
-									<input type="checkbox" id="tu1" name="interest" value="tu1">
-									<label for="tu1">table urbanisme et politique de la ville 1</label>
-								</div>
-								<div>
-									<input type="checkbox" id="tu2" name="interest" value="tu2">
-									<label for="tu2">table urbanisme et politique de la ville 2</label>
-								</div>
+        					  
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+        							<h3 class="panel-title">
+        								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne1">
+        									Finance
+        								</a>
+        							</h3>
+                                </div>
+        						<div id="collapseOne1" class="panel-collapse collapse">
+        							<div class="panel-body">
+        								<div class="checkData">
+        									<input type="checkbox" id="tf1" name="bp_2017_fonction" value="tf1">
+        									<label for="tf1">Budget</label>
+        								</div>
+        								<div class="checkData">
+        									<input type="checkbox" id="tf2" name="interest" value="tf2">
+        									<label for="tf2">table finance 2</label>
+        								</div>
+        							</div>
+                                </div>
                             </div>
+
+        					<div class="panel panel-default">
+                                <div class="panel-heading">
+        							<h3 class="panel-title">
+        								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse8">
+        									Gestion interne
+        								</a>
+        							</h3>
+                                </div>
+                                <div id="collapse8" class="panel-collapse collapse">
+        							<div class="panel-body">
+        								<div class="checkData">
+        									<input type="checkbox" id="tg1" name="interest" value="tg1">
+        									<label for="tg1">table gestion interne 1</label>
+        								</div>
+        								<div class="checkData">
+        									<input type="checkbox" id="tg2" name="interest" value="tg2">
+        									<label for="tg2">table gestion interne 2</label>
+        								</div>
+                                    </div>
+                                </div>
+                            </div>
+
+        					<div class="panel panel-default">
+                                <div class="panel-heading">
+        							<h3 class="panel-title">
+        								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse2">
+        									Jeunesse, sport et culture
+        								</a>
+        							</h3>
+                                </div>
+                                <div id="collapse2" class="panel-collapse collapse">
+        							<div class="panel-body">
+        								<div  class="checkData">
+        									<input type="checkbox" id="tj1" name="interest" value="tj1">
+        									<label for="tj1">table jeunesse, sport et culture 1</label>
+        								</div>
+        								<div class="checkData">
+        									<input type="checkbox" id="tj2" name="interest" value="tj2">
+        									<label for="tj2">table jeunesse, sport et culture 2</label>
+        								</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+        							<h3 class="panel-title">
+        								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse3">
+        									Référenciel géographique
+        								</a>
+        							</h3>
+                                </div>
+                                <div id="collapse3" class="panel-collapse collapse">
+        							<div class="panel-body">
+        								<div class="checkData">
+        									<input type="checkbox" id="tr1" name="interest" value="tr1">
+        									<label for="tr1">table référenciel géographique 1</label>
+        								</div>
+        								<div class="checkData">
+        									<input type="checkbox" id="tr2" name="interest" value="tr2">
+        									<label for="tr2">table référenciel géographique 2</label>
+        								</div>
+                                    </div>
+                                </div>
+                            </div>
+
+        					<div class="panel panel-default">
+                                <div class="panel-heading">
+        							<h3 class="panel-title">
+        								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse9">
+        									Urbanisme et politique de la ville
+        								</a>
+        							</h3>
+                                </div>
+                                <div id="collapse9" class="panel-collapse collapse">
+        							<div class="panel-body">
+        								<div>
+        									<input type="checkbox" id="tu1" name="interest" value="tu1">
+        									<label for="tu1">table urbanisme et politique de la ville 1</label>
+        								</div>
+        								<div>
+        									<input type="checkbox" id="tu2" name="interest" value="tu2">
+        									<label for="tu2">table urbanisme et politique de la ville 2</label>
+        								</div>
+                                    </div>
+                                </div>
+                            </div>
+        						
                         </div>
-                    </div>
-						
+                    </div><!--/#accordion1-->
                 </div>
-            </div><!--/#accordion1-->
-        </div>
-	</div>
+        	</div>
 			
-            <div id="exTab2" class="container"> 
-                <ul class="nav nav-tabs">
-                    <li id="tab1"><a href="#1" data-toggle="tab">Graphe</a></li>
-                    <li id="tab2"><a href="#2" data-toggle="tab">Tableau</a></li>
-                    <li id="tab3"><a href="#3" data-toggle="tab">Carte</a></li>
-                    <li id="tab4"><a href="#4" data-toggle="tab">Ligne temporelle</a></li>
-                    <li id="tab5"><a href="#5" data-toggle="tab">Infos</a></li>
-                    <li id="tab6"><a href="#6" data-toggle="tab">Télécharger</a></li>
-                </ul>
+            <div id="contentPage">
+                <div id="exTab2" class="container"> 
+                    <ul class="nav nav-tabs">
+                        <li id="tab1"><a href="#1" data-toggle="tab">Graphe</a></li>
+                        <li id="tab2"><a href="#2" data-toggle="tab">Tableau</a></li>
+                        <li id="tab3"><a href="#3" data-toggle="tab">Carte</a></li>
+                        <li id="tab4"><a href="#4" data-toggle="tab">Ligne temporelle</a></li>
+                        <li id="tab5"><a href="#5" data-toggle="tab">Infos</a></li>
+                        <li id="tab6"><a href="#6" data-toggle="tab">Télécharger</a></li>
+                    </ul>
 
-                <div class="tab-content ">
-                    <div class="tab-pane" id="1">
-                        <div id='box1' class="boxVisu">
-                            <h4 class="panel-title pull-left"></h4>
+                    <div class="tab-content ">
+                        <div class="tab-pane" id="1">
+                            <div id='box1' class="boxVisu">
+                                <h4 class="panel-title pull-left"></h4>
 
-                            <div id="panel-body-0">
-                                <select class="form-control select" id="selectChart"></select>
-                                <select class="form-control select" id="select0"></select>
-                                <a id="seeMoreChart0"><canvas id="myChart0" class="chart" height="1000" width="600"></canvas></a>
+                                <div id="panel-body-0">
+                                    <select class="form-control select" id="selectChart"></select>
+                                    <select class="form-control select" id="select0"></select>
+                                    <a id="seeMoreChart0"><canvas id="myChart0" class="chart" height="1000" width="600"></canvas></a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="tab-pane" id="2">
-                        <div id='box2' class="boxVisu">
-                            <h4 class="panel-title pull-left"></h4>
+                        <div class="tab-pane" id="2">
+                            <div id='box2' class="boxVisu">
+                                <h4 class="panel-title pull-left"></h4>
 
-                            <div id="panel-body-1">
-                                </br>
-                                <select class="form-control" id="select1"></select>
-                                </br>
-                                <a id="seeMoreChart1"><canvas id="myChart1" class="chart"></canvas></a>
+                                <div id="panel-body-1">
+                                    </br>
+                                    <select class="form-control" id="select1"></select>
+                                    </br>
+                                    <a id="seeMoreChart1"><canvas id="myChart1" class="chart"></canvas></a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                  <div class="tab-pane" id="3">
-                        <div id='box3' class="panel panel-default">
-                            <h4 class="panel-title pull-left"></h4>
+                      <div class="tab-pane" id="3">
+                            <div id='box3' class="panel panel-default">
+                                <h4 class="panel-title pull-left"></h4>
 
-                            <div id="panel-body-2" class="panel-body form-group panelBody">
-                                </br>
-                                <select class="form-control" id="select2"></select>
-                                </br>
-                                <a id="seeMoreChart2"><canvas id="myChart2" class="chart"></canvas></a>
+                                <div id="panel-body-2" class="panel-body form-group panelBody">
+                                    </br>
+                                    <select class="form-control" id="select2"></select>
+                                    </br>
+                                    <a id="seeMoreChart2"><canvas id="myChart2" class="chart"></canvas></a>
+                                </div>
                             </div>
-                        </div>
-                  </div>
-                  <div class="tab-pane" id="4">
-                        <div id='box4' class="panel panel-default">
-                            <h4 class="panel-title pull-left"></h4>
+                      </div>
+                      <div class="tab-pane" id="4">
+                            <div id='box4' class="panel panel-default">
+                                <h4 class="panel-title pull-left"></h4>
 
-                            <div id="panel-body-3" class="panel-body form-group panelBody">
-                                </br>
-                                <select class="form-control" id="select3"></select>
-                                </br>
-                                <a id="seeMoreChart3"><canvas id="myChart3" class="chart"></canvas></a>
+                                <div id="panel-body-3" class="panel-body form-group panelBody">
+                                    </br>
+                                    <select class="form-control" id="select3"></select>
+                                    </br>
+                                    <a id="seeMoreChart3"><canvas id="myChart3" class="chart"></canvas></a>
+                                </div>
                             </div>
-                        </div>
+                      </div>
+                      <div class="tab-pane" id="5">
+                          <h3>Affichage des informations sur la donnée</h3>
+                      </div>
+                      <div class="tab-pane" id="6">
+                          <h3>Affichage des liens de téléchargement</h3>
+                      </div>
                   </div>
-                  <div class="tab-pane" id="5">
-                      <h3>Affichage des informations sur la donnée</h3>
-                  </div>
-                  <div class="tab-pane" id="6">
-                      <h3>Affichage des liens de téléchargement</h3>
-                  </div>
-              </div>
-            </div>
+                </div>
 
-            <div id="timeLine">
-                <input id="timeControl" type="range" step="1" onchange="showValue()"/>
-                <output id="show"></output>
-                <datalist id="tickList"></datalist>
-                <script>
-                    function showValue(){
-                            var valof = $('#timeControl').val();
-                            $('#show').text(valof);
-                    }
-                </script>
-            </div>
-
-            <div class="page-header">
-                <h2>Partager </h2>
-            </div>
-            <p>Vous pouvez partager cette page sur facebook ainsi que twitter : </p>
-            <div id="rs">
-                
-                <!-- FACEBOOK -->
-                <div id="fb-root" class="rs"></div>
-                <script>(
-                    function(d, s, id) {
-                        var js, fjs = d.getElementsByTagName(s)[0];
-                        if (d.getElementById(id)) return;
-                        js = d.createElement(s); js.id = id;
-                        js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.9&appId=778292025574313";
-                        fjs.parentNode.insertBefore(js, fjs);
-                    }(document, 'script', 'facebook-jssdk'));
-                </script>
-
-                <!-- TWITTER -->
-                <div class="rs">
-                    <a href="https://twitter.com/share" class="twitter-share-button" data-size="large">Tweet</a> 
+                <div id="timeLine">
+                    <input id="timeControl" type="range" step="1" onchange="showValue()"/>
+                    <output id="show"></output>
+                    <datalist id="tickList"></datalist>
                     <script>
-                        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+                        function showValue(){
+                                var valof = $('#timeControl').val();
+                                $('#show').text(valof);
+                        }
                     </script>
                 </div>
 
-                  <!-- Your share button code -->
-                  <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Partager</a></div>
-            </div>
-
-            <div class="page-header">
-                <h2>Commentaires </h2>
-            </div>
-            <div class="post-footer">
-                <ul class="comments-list">
-                    <li class="comment">
-                        <div class="comment-body">
-                            <div class="comment-heading">
-                                <h4 class="user">Annonyme</h4>
-                                <h5 class="time">Il y a 8 minutes</h5>
-                            </div>
-                            <p>Commentaire numéro 1</p>
-                        </div>
-                    </li>
-                    <li class="comment">
-                        <div class="comment-body">
-                            <div class="comment-heading">
-                                <h4 class="user">Open Data La Rochelle</h4>
-                                <h5 class="time">Il y a 3 minutes</h5>
-                            </div>
-                            <p>Commentaire numéro 2</p>
-                        </div>
-                    </li>
-                    <li class="comment">
-                        <div class="comment-body">
-                            <div class="comment-heading">
-                                <h4 class="user">Annonyme</h4>
-                                <h5 class="time">Il y a 2 minutes</h5>
-                            </div>
-                            <p>Commentaire numéro 3</p>
-                        </div>
-                    </li>
-                </ul>
-                <div class="input-group"> 
-                    <input class="form-control" placeholder="Add a comment" type="text">
-                    <span class="input-group-addon">
-                        <a href="#"><i class="glyphicon glyphicon-pencil"></i></a>  
-                    </span>
+                <div class="page-header">
+                    <h2>Partager </h2>
                 </div>
-            </div>
+                <p>Vous pouvez partager cette page sur facebook ainsi que twitter : </p>
+                <div id="rs">
+                    
+                    <!-- FACEBOOK -->
+                    <div id="fb-root" class="rs"></div>
+                    <script>(
+                        function(d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0];
+                            if (d.getElementById(id)) return;
+                            js = d.createElement(s); js.id = id;
+                            js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.9&appId=778292025574313";
+                            fjs.parentNode.insertBefore(js, fjs);
+                        }(document, 'script', 'facebook-jssdk'));
+                    </script>
 
+                    <!-- TWITTER -->
+                    <div class="rs">
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-size="large">Tweet</a> 
+                        <script>
+                            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+                        </script>
+                    </div>
+
+                      <!-- Your share button code -->
+                      <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Partager</a></div>
+                </div>
+
+                <div class="page-header">
+                    <h2>Commentaires </h2>
+                </div>
+                <div class="post-footer">
+                    <ul class="comments-list">
+                        <li class="comment">
+                            <div class="comment-body">
+                                <div class="comment-heading">
+                                    <h4 class="user">Annonyme</h4>
+                                    <h5 class="time">Il y a 8 minutes</h5>
+                                </div>
+                                <p>Commentaire numéro 1</p>
+                            </div>
+                        </li>
+                        <li class="comment">
+                            <div class="comment-body">
+                                <div class="comment-heading">
+                                    <h4 class="user">Open Data La Rochelle</h4>
+                                    <h5 class="time">Il y a 3 minutes</h5>
+                                </div>
+                                <p>Commentaire numéro 2</p>
+                            </div>
+                        </li>
+                        <li class="comment">
+                            <div class="comment-body">
+                                <div class="comment-heading">
+                                    <h4 class="user">Annonyme</h4>
+                                    <h5 class="time">Il y a 2 minutes</h5>
+                                </div>
+                                <p>Commentaire numéro 3</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="input-group"> 
+                        <input class="form-control" placeholder="Add a comment" type="text">
+                        <span class="input-group-addon">
+                            <a href="#"><i class="glyphicon glyphicon-pencil"></i></a>  
+                        </span>
+                    </div>
+                </div>
+            </div> <!-- END CONTENT PAGE -->
+
+            <!-- ============================ -->
+            <!-- ========== Footer ========== -->
+            <!-- ============================ -->
+            <a href="#top"><div class="topHalfCircle">
+                <span id="arrowFooter" class="glyphicon glyphicon-menu-up"></span>
+            </div></a>
+
+            <script type="text/javascript">
+                $("a[href='#top']").click(function() {
+                    $("html, body").animate({ scrollTop: 0 }, "slow");
+                });
+            </script>
+
+            <footer>
+
+            </footer>
+            
         </div>
     </body>
-
-
-    <!-- ============================ -->
-    <!-- ========== Footer ========== -->
-    <!-- ============================ -->
-    <a href="#top"><div class="topHalfCircle">
-        <span id="arrowFooter" class="glyphicon glyphicon-menu-up"></span>
-    </div></a>
-
-    <script type="text/javascript">
-        $("a[href='#top']").click(function() {
-            $("html, body").animate({ scrollTop: 0 }, "slow");
-        });
-    </script>
-
-    <footer>
-
-    </footer>
-
 
     <!-- ============================ -->
     <!-- ======== Javascript ======== -->

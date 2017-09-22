@@ -1,15 +1,31 @@
-
-#exTab2 {
-    width: 55%;
-    padding: 0;
-	float: left;
+body {
+	margin-top: 70px;
 }
 
+
+/* LATERAL MENU */
+#tableDonnees {
+	width: 100%;
+}
+#titleLateralMenu {
+	padding-left: 15px;
+}
 #donnees {
-  width:44%;
-  float: left;
+	width: 30%;
+	position: fixed;
+	top: 100px;
 }
 
+/* CONTENT */
+#titlePage {
+	width: 68%;
+	margin-left: 30%;
+}
+#contentPage {
+	width: 68%;
+	top: 120px;
+	margin-left: 30%;
+}
 #box1 {
     width: 100%;
     margin-left: 0;
@@ -56,6 +72,12 @@
 	margin-top: 20px;
 }
 
+.divContent {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+/* TIMELINE */
 input[type="range"] {
 	position: relative;
 	margin-left: 1em;
