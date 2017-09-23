@@ -7,42 +7,47 @@ $(document).ready(function(){
 	 * @return
 	 */
 	function init() {
-		$(".titleIcons").hide();
 
-		for (i = 0; i < 8; i++) { 
-			var iconsNav = "#iconsNav" + i+1
-			var titleIcon = "#titleIcon" + i+1
+		/* ====== Initialization ====== */
 
-			$(iconsNav).hover(function() {
-				$(this).animate({ 'zoom': 1.2 }, 10);
-				$(this).css('text-decoration', 'none');
-				$(titleIcon).show();
-			}, function(){
-				$(this).animate({ 'zoom': 1 }, 10);
-				$(titleIcon).hide();
-			});
-		}
 		$(".boxVisu").children("h4").hide();
 		
 		var resource = window.location.href.split('resource=');
 		res = resource[1].split('#');
-		console.log(res[0]);
 		
+		// 
 		if(res[0]) {
-			console.log('resoure ok');
-			_checkbox(res[0]);
+			// Checkbox = true
+			$("input[name=" + res[0] + "]").prop('checked', true);
+
+			// TODO
+			// console.log('==================')
+			// console.log('ici')
+
+			// // Open accordion menu
+			// var accordionToggle = document.getElementsByName(res[0]); 
+			// var accordionToggle1 = accordionToggle.parentElement; 
+			// //accordionToggle.previousSibling.closest('.panel-heading').toggleClass('active');
+			// console.log(res[0]);
+			// console.log(accordionToggle);
+			// console.log(accordionToggle1);
+
+			// Draw visualization
 			getData(res[0]);
 		}
 	
-		// accordian
-		$('.accordion-toggle').on('click', function(){
-			$(this).closest('.panel-group').children().each(function(){
-			$(this).find('>.panel-heading').removeClass('active');
-			 });
 
+	   	/* ========== EVENT ========== */
+
+		// Accordion
+		$('.accordion-toggle').on('click', function() {
+			$(this).closest('.panel-group').children().each(function() {
+				$(this).find('>.panel-heading').removeClass('active');
+			});
 			$(this).closest('.panel-heading').toggleClass('active');
 		});
 		
+		// If new data checked, change information to show
 		$(".checkData").on("click",function() {
 			if($('input',this).is(':checked')){
 
@@ -105,11 +110,6 @@ $(document).ready(function(){
 
     	return;
 	};
-	
-	function _checkbox(name){
-		console.log("je suis dans la fonction");
-		$( "input[name=" + name + "]" ).prop('checked', true);
-	};
 
 	/**
 	 * Draw visualisation
@@ -141,7 +141,14 @@ $(document).ready(function(){
 
         return;
 	};
-	
+
+	/**
+	 * Enable panels
+	 *
+	 * @param  {String}     datatype       Possible data type : HistorisedNotLocalisable, NotHistorisedLocalisable, NotHistorisedNotLocalisable, HistorisedLocalisable 
+	 *
+	 * @return
+	 */
 	function _enablePanel(datatype) {
 		if(datatype == "HistorisedNotLocalisable"){
 			$('#tab3').hide();
@@ -173,7 +180,8 @@ $(document).ready(function(){
 			$('#tab3').hide();
 			$('#tab4').hide();
 		}
-	}
-    init();
+	};
 
+
+    init();
 });
