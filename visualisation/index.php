@@ -68,7 +68,7 @@
                 <div id='box1' class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="panel-title pull-left"></h4>
-                        <button class="btn btn-default label label-warning pull-right" data-toggle="modal" data-target="#example">Warning</button>
+                        <button class="btn btn-default label label-warning pull-right" data-toggle="modal" data-target="#example">Un problème ?</button>
 
                         <div class="modal fade" tabindex="-1" role="dialog" id="example">
                             <div class="modal-dialog">
@@ -107,7 +107,7 @@
                 <div id='box2' class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="panel-title pull-left"></h4>
-                        <button class="btn btn-default label label-warning pull-right" data-toggle="modal" data-target="#example">Warning</button>
+                        <button class="btn btn-default label label-warning pull-right" data-toggle="modal" data-target="#example">un problème ?</button>
                         
                         <div class="modal fade" tabindex="-1" role="dialog" id="example">
                             <div class="modal-dialog">
@@ -145,7 +145,7 @@
             </div>
 
 
-            <div class="box-wrapper-inner">
+            <!--<div class="box-wrapper-inner">
                 <div id='box3' class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="panel-title pull-left"></h4>
@@ -169,9 +169,9 @@
                                     <div class="modal-footer">
                                         <button type="submit" class="btn btn-default" data-dismiss="modal">Envoyer</button>
                                     </div>
-                                </div><!-- /.modal-content -->
-                            </div><!-- /.modal-dialog -->
-                        </div><!-- /.modal -->
+                                </div>
+                            </div>
+                        </div>
                         <div class="clearfix"></div>
                     </div>
                     <div id="panel-body-2"  class="panel-body form-group panelBody">
@@ -182,9 +182,9 @@
                     </div>
                     <a id="seeMore2" style="float:right" class="glyphicon glyphicon-zoom-in btn btn-default bottomButton" aria-hidden="true"></a>
                     <a id="info2" style="float:right" class="glyphicon glyphicon-info-sign btn btn-default bottomButton" aria-hidden="true"></a>
-                </div>
+                </div> -->
 
-                <div id='box4' class="panel panel-default">
+                <!--<div id='box4' class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="panel-title pull-left"></h4>
                         <button class="btn btn-default label label-warning pull-right" data-toggle="modal" data-target="#example">Warning</button>
@@ -207,9 +207,9 @@
                                     <div class="modal-footer">
                                         <button type="submit" class="btn btn-default" data-dismiss="modal">Envoyer</button>
                                     </div>
-                                </div><!-- /.modal-content -->
-                            </div><!-- /.modal-dialog -->
-                        </div><!-- /.modal -->
+                                </div>
+                            </div>
+                        </div>
                         
                         <div class="clearfix"></div>
                     </div>
@@ -222,7 +222,7 @@
                     <a id="seeMore3" style="float:right" class="glyphicon glyphicon-zoom-in btn btn-default bottomButton" aria-hidden="true"></a>
                     <a id="info3" style="float:right" class="glyphicon glyphicon-info-sign btn btn-default bottomButton" aria-hidden="true"></a>
                 </div>
-            </div>
+            </div> -->
 
             </br>
             </br>
