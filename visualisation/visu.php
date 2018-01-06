@@ -101,188 +101,145 @@
 		            <div id="tableDonnees" class="col-xs-12 col-sm-8 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
                         <h2 id="titleLateralMenu">Table de données</h2>
                         <div class="accordion">
-                        <div class="panel-group" id="accordion1">
-        					<div class="panel panel-default">
-        						<div class="panel-heading active">
-        							<h3 class="panel-title">
-        								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse6">
-        									Citoyenneté
-        								</a>
-        							</h3>
-        						</div>
-        						<div id="collapse6" class="panel-collapse collapse">
-        							<div class="panel-body">
-        								<div class="checkData">
-        									<input type="checkbox" id="tc1" name="archive_fiche" value="tc1">
-        									<label for="tc1">Archive</label>
-        								</div>
-        								<div class="checkData">
-        								<input type="checkbox" id="tc2" name="population_2008" value="tc2">
-        									<label for="tc2">INSEE</label>
-        								</div>
-        							</div>
-        						</div>
-                            </div>
-        						  
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-        							<h3 class="panel-title">
-        								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse7">
-        									Déplacement
-        								</a>
-        							</h3>
-                                </div>
-        						<div id="collapse7" class="panel-collapse collapse">
-        							<div class="panel-body">
-        								<div class="checkData">
-        									<input type="checkbox" id="td1" name="disponibilite_parking" value="td1">
-        									<label for="td1">Parking</label>
-        								</div>
-        								<div class="checkData">
-        									<input type="checkbox" id="td2" name="interest" value="td2">
-        									<label for="td2">table déplacement 2</label>
-        								</div>
-        							</div>
-                                </div>
-                            </div>
-                                
-        					<div class="panel panel-default">
-                                <div class="panel-heading">
-        							<h3 class="panel-title">
-        								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo1">
-        									Espace public
-        								</a>
-        							</h3>
-                                </div>
-                                <div id="collapseTwo1" class="panel-collapse collapse">
-        							<div class="panel-body">
-        								<div class="checkData">
-        									<input type="checkbox" id="te1" name="interest" value="te1">
-        									<label for="te1">table espace public 1</label>
-        								</div>
-        								<div class="checkData">
-        									<input type="checkbox" id="te2" name="interest" value="te2">
-        									<label for="te2">table espace public 2</label>
-        								</div>
-        							</div>
-        						</div>
-                            </div>
-        					  
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-        							<h3 class="panel-title">
-        								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne1">
-        									Finance
-        								</a>
-        							</h3>
-                                </div>
-        						<div id="collapseOne1" class="panel-collapse collapse">
-        							<div class="panel-body">
-        								<div class="checkData">
-        									<input type="checkbox" id="tf1" name="bp_2017_fonction" value="tf1">
-        									<label for="tf1">Budget</label>
-        								</div>
-        								<div class="checkData">
-        									<input type="checkbox" id="tf2" name="interest" value="tf2">
-        									<label for="tf2">table finance 2</label>
-        								</div>
-        							</div>
-                                </div>
-                            </div>
+                            <div class="panel-group" id="accordion1">
 
-        					<div class="panel panel-default">
-                                <div class="panel-heading">
-        							<h3 class="panel-title">
-        								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse8">
-        									Gestion interne
-        								</a>
-        							</h3>
+            					<div class="panel panel-default">
+            						<div class="panel-heading active">
+            							<h3 class="panel-title">
+            								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse6">
+            									Citoyenneté
+            								</a>
+            							</h3>
+            						</div>
+            						<div id="collapse6" class="panel-collapse collapse">
+            							<div class="panel-body">
+            								<div class="checkData">
+            									<input type="checkbox" id="tc1" name="archive_fiche" value="tc1">
+            									<label for="tc1">Archive</label>
+            								</div>
+            								<div class="checkData">
+            								    <input type="checkbox" id="tc2" name="population_2008" value="tc2">
+            									<label for="tc2">INSEE</label>
+            								</div>
+            							</div>
+            						</div>
                                 </div>
-                                <div id="collapse8" class="panel-collapse collapse">
-        							<div class="panel-body">
-        								<div class="checkData">
-        									<input type="checkbox" id="tg1" name="interest" value="tg1">
-        									<label for="tg1">table gestion interne 1</label>
-        								</div>
-        								<div class="checkData">
-        									<input type="checkbox" id="tg2" name="interest" value="tg2">
-        									<label for="tg2">table gestion interne 2</label>
-        								</div>
+            						  
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+            							<h3 class="panel-title">
+            								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse7">
+            									Déplacement
+            								</a>
+            							</h3>
+                                    </div>
+            						<div id="collapse7" class="panel-collapse collapse">
+            							<div class="panel-body">
+            								<div class="checkData">
+            									<input type="checkbox" id="td1" name="disponibilite_parking" value="td1">
+            									<label for="td1">Parking</label>
+            								</div>
+            							</div>
                                     </div>
                                 </div>
-                            </div>
-
-        					<div class="panel panel-default">
-                                <div class="panel-heading">
-        							<h3 class="panel-title">
-        								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse2">
-        									Jeunesse, sport et culture
-        								</a>
-        							</h3>
+                                    
+            					<div class="panel panel-default">
+                                    <div class="panel-heading">
+            							<h3 class="panel-title">
+            								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo1">
+            									Espace public
+            								</a>
+            							</h3>
+                                    </div>
+                                    <div id="collapseTwo1" class="panel-collapse collapse">
+            							<div class="panel-body">
+            							</div>
+            						</div>
                                 </div>
-                                <div id="collapse2" class="panel-collapse collapse">
-        							<div class="panel-body">
-        								<div  class="checkData">
-        									<input type="checkbox" id="tj1" name="interest" value="tj1">
-        									<label for="tj1">table jeunesse, sport et culture 1</label>
-        								</div>
-        								<div class="checkData">
-        									<input type="checkbox" id="tj2" name="interest" value="tj2">
-        									<label for="tj2">table jeunesse, sport et culture 2</label>
-        								</div>
+            					  
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+            							<h3 class="panel-title">
+            								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne1">
+            									Finance
+            								</a>
+            							</h3>
+                                    </div>
+            						<div id="collapseOne1" class="panel-collapse collapse">
+            							<div class="panel-body">
+            								<div class="checkData">
+            									<input type="checkbox" id="tf1" name="bp_2017_fonction" value="tf1">
+            									<label for="tf1">Budget</label>
+            								</div>
+            							</div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-        							<h3 class="panel-title">
-        								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse3">
-        									Référenciel géographique
-        								</a>
-        							</h3>
-                                </div>
-                                <div id="collapse3" class="panel-collapse collapse">
-        							<div class="panel-body">
-        								<div class="checkData">
-        									<input type="checkbox" id="tr1" name="interest" value="tr1">
-        									<label for="tr1">table référenciel géographique 1</label>
-        								</div>
-        								<div class="checkData">
-        									<input type="checkbox" id="tr2" name="interest" value="tr2">
-        									<label for="tr2">table référenciel géographique 2</label>
-        								</div>
+            					<div class="panel panel-default">
+                                    <div class="panel-heading">
+            							<h3 class="panel-title">
+            								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse8">
+            									Gestion interne
+            								</a>
+            							</h3>
+                                    </div>
+                                    <div id="collapse8" class="panel-collapse collapse">
+            							<div class="panel-body">
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-        					<div class="panel panel-default">
-                                <div class="panel-heading">
-        							<h3 class="panel-title">
-        								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse9">
-        									Urbanisme et politique de la ville
-        								</a>
-        							</h3>
-                                </div>
-                                <div id="collapse9" class="panel-collapse collapse">
-        							<div class="panel-body">
-        								<div>
-        									<input type="checkbox" id="tu1" name="interest" value="tu1">
-        									<label for="tu1">table urbanisme et politique de la ville 1</label>
-        								</div>
-        								<div>
-        									<input type="checkbox" id="tu2" name="interest" value="tu2">
-        									<label for="tu2">table urbanisme et politique de la ville 2</label>
-        								</div>
+            					<div class="panel panel-default">
+                                    <div class="panel-heading">
+            							<h3 class="panel-title">
+            								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse2">
+            									Jeunesse, sport et culture
+            								</a>
+            							</h3>
+                                    </div>
+                                    <div id="collapse2" class="panel-collapse collapse">
+            							<div class="panel-body">
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-        						
-                        </div>
-                    </div><!--/#accordion1-->
-                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+            							<h3 class="panel-title">
+            								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse3">
+            									Référenciel géographique
+            								</a>
+            							</h3>
+                                    </div>
+                                    <div id="collapse3" class="panel-collapse collapse">
+            							<div class="panel-body">
+                                        </div>
+                                    </div>
+                                </div>
+
+            					<div class="panel panel-default">
+                                    <div class="panel-heading">
+            							<h3 class="panel-title">
+            								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse9">
+            									Urbanisme et politique de la ville
+            								</a>
+            							</h3>
+                                    </div>
+                                    <div id="collapse9" class="panel-collapse collapse">
+            							<div class="panel-body">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!--/#group-panel accordion1-->
+                        </div><!--/#accordion-->
+                    </div><!--/#tableDonnees-->
+                </div><!--/row #donnees-->
         	</div>
 			
+
+
+
+
             <div id="contentPage">
                 <div id="exTab2" class="container"> 
                     <ul class="nav nav-tabs">

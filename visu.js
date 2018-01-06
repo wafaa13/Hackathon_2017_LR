@@ -21,16 +21,23 @@ $(document).ready(function(){
 			$("input[name=" + res[0] + "]").prop('checked', true);
 
 			// TODO
-			// console.log('==================')
-			// console.log('ici')
+			console.log('==================')
+			console.log('==================')
+			console.log('==================')
+			console.log('==================')
+			console.log('ici')
 
-			// // Open accordion menu
-			// var accordionToggle = document.getElementsByName(res[0]); 
-			// var accordionToggle1 = accordionToggle.parentElement; 
-			// //accordionToggle.previousSibling.closest('.panel-heading').toggleClass('active');
-			// console.log(res[0]);
-			// console.log(accordionToggle);
-			// console.log(accordionToggle1);
+			// Open accordion menu
+			var accordionToggle = document.getElementsByName(res[0]); 
+			var accordionToggle3 = document.getElementsByName(res[0].tagName); 
+			var accordionToggle2 = document.getElementsByName(res[0]).parentNode; 
+			var accordionToggle1 = accordionToggle.parentElement; 
+
+			//accordionToggle.previousSibling.closest('.panel-heading').toggleClass('active');
+			console.log(res[0]);
+			console.log(accordionToggle);
+			console.log(accordionToggle1);
+			console.log(accordionToggle3);
 
 			// Draw visualization
 			getData(res[0]);
@@ -152,17 +159,17 @@ $(document).ready(function(){
 			$('#tab3').hide();
 			$('#tab1').show();
 			$('#tab2').show();
-			$('#tab4').show();
+			// $('timeline').show();
 		}
 		else if(datatype == "NotHistorisedLocalisable"){
-			$('#tab4').hide();
+			// $('timeline').hide();
 			$('#tab1').show();
 			$('#tab2').show();
 			$('#tab3').show();
 		}
 		else if(datatype == "NotHistorisedNotLocalisable"){
 			$('#tab3').hide();
-			$('#tab4').hide();
+			// $('timeline').hide();
 			$('#tab1').show();
 			$('#tab2').show();
 		}
@@ -170,13 +177,13 @@ $(document).ready(function(){
 			$('#tab1').show();
 			$('#tab2').show();
 			$('#tab3').show();
-			$('#tab4').show();
+			// $('timeline').show();
 		}
 		else{
 			$('#tab1').hide();
 			$('#tab2').hide();
 			$('#tab3').hide();
-			$('#tab4').hide();
+			// $('timeline').hide();
 		}
 	};
 
