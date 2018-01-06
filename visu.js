@@ -31,7 +31,7 @@ $(document).ready(function(){
 			$(this).closest('.panel-heading').toggleClass('active');
 		});
 		
-		// If new data checked, change information to show
+		// Change information to show
 		$(".checkData").on("click",function() {
 
 			// Destroy canvas
@@ -52,6 +52,22 @@ $(document).ready(function(){
 
 			// Call getData methode to draw visualisation
 			var nameData = $(this).attr("id");
+
+			// Change title
+			if(nameData == "disponibilite_parking") {
+		    	$("#titleVisualisation").html("Visualisation - Parkings - Places disponibles");
+
+		    } else if (nameData == "population_2008") {
+		    	$("#titleVisualisation").html("Visualisation - Archives");
+
+		    } else if (nameData == "archive_fiche") {
+		    	$("#titleVisualisation").html("Visualisation - Budget prévisionnel - 2017 fonction");
+
+		    } else if (nameData == "bp_2017_fonction") {
+		    	$("#titleVisualisation").html("Visualisation - Population 2008");
+
+		    }
+
 			getData(nameData);
 		});
 	};

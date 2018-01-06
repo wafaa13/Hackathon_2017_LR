@@ -77,7 +77,7 @@
 
             <div id="titlePage" class="page-header">
             </br>
-                <h2> Visualisation 
+                <h2 id="titleVisualisation"> Visualisation 
                    <?php 
                     if ($_GET['resource'] == disponibilite_parking) {
                         echo " - Parkings - Places disponibles"; 
