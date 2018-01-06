@@ -98,10 +98,12 @@
 			
 			<div class="bord">
 			    <div class="row" id="donnees">
+                <!--<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span> -->
 		            <div id="tableDonnees" class="col-xs-12 col-sm-8 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
                         <h2 id="titleLateralMenu">Table de données</h2>
                         <div class="accordion">
-                            <div class="panel-group" id="accordion1">
+                            <div class="panel-group" id="accordion1"> <!-- class : sidenav--> 
+                                <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
 
             					<div class="panel panel-default">
             						<div class="panel-heading active">
@@ -113,13 +115,11 @@
             						</div>
             						<div id="collapse6" class="panel-collapse collapse">
             							<div class="panel-body">
-            								<div class="checkData">
-            									<input type="checkbox" id="tc1" name="archive_fiche" value="tc1">
-            									<label for="tc1">Archive</label>
+            								<div id="archive_fiche" class="checkData">
+            									Archive
             								</div>
-            								<div class="checkData">
-            								    <input type="checkbox" id="tc2" name="population_2008" value="tc2">
-            									<label for="tc2">INSEE</label>
+            								<div id="population_2008" class="checkData">
+                                                INSEE
             								</div>
             							</div>
             						</div>
@@ -135,9 +135,8 @@
                                     </div>
             						<div id="collapse7" class="panel-collapse collapse">
             							<div class="panel-body">
-            								<div class="checkData">
-            									<input type="checkbox" id="td1" name="disponibilite_parking" value="td1">
-            									<label for="td1">Parking</label>
+            								<div id="disponibilite_parking" class="checkData">
+            									Parking
             								</div>
             							</div>
                                     </div>
@@ -167,9 +166,8 @@
                                     </div>
             						<div id="collapseOne1" class="panel-collapse collapse">
             							<div class="panel-body">
-            								<div class="checkData">
-            									<input type="checkbox" id="tf1" name="bp_2017_fonction" value="tf1">
-            									<label for="tf1">Budget</label>
+            								<div id="bp_2017_fonction" class="checkData">
+            									Budget
             								</div>
             							</div>
                                     </div>
@@ -418,6 +416,13 @@
             $("#tab5").addClass("active");
         }
 
+        // function openNav() {
+        //     document.getElementById("accordion1").style.width = "250px";
+        // }
+
+        // function closeNav() {
+        //     document.getElementById("accordion1").style.width = "0";
+        // }
     </script>
 
 

@@ -15,30 +15,7 @@ $(document).ready(function(){
 		var resource = window.location.href.split('resource=');
 		res = resource[1].split('#');
 		
-		// 
 		if(res[0]) {
-			// Checkbox = true
-			$("input[name=" + res[0] + "]").prop('checked', true);
-
-			// TODO
-			console.log('==================')
-			console.log('==================')
-			console.log('==================')
-			console.log('==================')
-			console.log('ici')
-
-			// Open accordion menu
-			var accordionToggle = document.getElementsByName(res[0]); 
-			var accordionToggle3 = document.getElementsByName(res[0].tagName); 
-			var accordionToggle2 = document.getElementsByName(res[0]).parentNode; 
-			var accordionToggle1 = accordionToggle.parentElement; 
-
-			//accordionToggle.previousSibling.closest('.panel-heading').toggleClass('active');
-			console.log(res[0]);
-			console.log(accordionToggle);
-			console.log(accordionToggle1);
-			console.log(accordionToggle3);
-
 			// Draw visualization
 			getData(res[0]);
 		}
@@ -56,28 +33,26 @@ $(document).ready(function(){
 		
 		// If new data checked, change information to show
 		$(".checkData").on("click",function() {
-			if($('input',this).is(':checked')){
 
-				// Destroy canvas
-				var canvas = document.getElementById('myChart0');
-				var context = canvas.getContext('2d');
-				canvas.remove();
+			// Destroy canvas
+			var canvas = document.getElementById('myChart0');
+			var context = canvas.getContext('2d');
+			canvas.remove();
 
-				// Create new canvas
-				var newCanvas = document.createElement("canvas");
-				newCanvas.id = 'myChart0';
-				newCanvas.class = 'chart';
-				newCanvas.height = 2000;
-				newCanvas.width = 1600;
+			// Create new canvas
+			var newCanvas = document.createElement("canvas");
+			newCanvas.id = 'myChart0';
+			newCanvas.class = 'chart';
+			newCanvas.height = 2000;
+			newCanvas.width = 1600;
 
-				// Append canvas to document
-				div = document.getElementById('seeMoreChart0');
-				div.appendChild(newCanvas);
+			// Append canvas to document
+			div = document.getElementById('seeMoreChart0');
+			div.appendChild(newCanvas);
 
-				// Call getData methode to draw visualisation
-				var nameData = $('input', this).attr("name");
-				getData(nameData);
-			}
+			// Call getData methode to draw visualisation
+			var nameData = $(this).attr("id");
+			getData(nameData);
 		});
 	};
 
