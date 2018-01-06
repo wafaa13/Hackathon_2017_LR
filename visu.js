@@ -177,7 +177,14 @@ $(document).ready(function(){
 			// $('timeline').hide();
 		}
 	};
+    
+    function openNav() {
+        document.getElementById("accordion1").style.width = "250px";
+    }
 
+    function closeNav() {
+        document.getElementById("accordion1").style.width = "0";
+    }
 
     init();
 });

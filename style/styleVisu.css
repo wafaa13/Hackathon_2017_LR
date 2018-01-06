@@ -26,7 +26,7 @@ body {
 	font-size: 15px;
 }
 
-/*@media (max-width: 620px) {
+@media (max-width: 620px) {
     .sidenav {
         height: 100%;
         width: 0;
@@ -60,7 +60,7 @@ body {
         font-size: 36px;
         margin-left: 50px;
     }
-}*/
+}
 
 /* CONTENT */
 #titlePage {

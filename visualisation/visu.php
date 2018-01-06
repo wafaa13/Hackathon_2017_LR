@@ -96,9 +96,9 @@
 
             </br>
 			
+            <!-- <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>-->
 			<div class="bord">
 			    <div class="row" id="donnees">
-                <!--<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span> -->
 		            <div id="tableDonnees" class="col-xs-12 col-sm-8 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
                         <h2 id="titleLateralMenu">Table de données</h2>
                         <div class="accordion">
@@ -415,14 +415,6 @@
             $("#5").addClass("active");
             $("#tab5").addClass("active");
         }
-
-        // function openNav() {
-        //     document.getElementById("accordion1").style.width = "250px";
-        // }
-
-        // function closeNav() {
-        //     document.getElementById("accordion1").style.width = "0";
-        // }
     </script>
 
 
