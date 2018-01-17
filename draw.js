@@ -71,7 +71,7 @@ function init() {
  * @return
  */
 function drawRandomVisualization(dataJson, position, metadata, metadataLink) {
-
+    console.log(Object.keys(dataJson).length)
     // Maybe put this information in a Json file
     var HistorisedLocalisableVisualisation = ["graph", "timeline", "map"];
     var NotHistorisedNotLocalisableVisualisation = ["graph"];
@@ -94,6 +94,14 @@ function drawRandomVisualization(dataJson, position, metadata, metadataLink) {
                 var typeGraph = metadata.graph.possibleGraphs;
                 var randGraph = Math.floor(Math.random() * typeGraph.length);
 
+
+                //If the length of the data is less than 10, use bar chart
+                // if(Object.keys(dataJson).length < 10){
+                //     console.log("ça doit être en barres")
+                // }
+                // else {
+                //     console.log("autres graphes")
+                // }
                 // Draw the graph
                 console.log("draw Graph");
                 var opts = {};
@@ -268,9 +276,9 @@ function parseDataForGraph(dataJson, metadata, position) {
  * @return
  */
 function drawGraph(dataJson, randGraph, position, metadata, selectVal, metadataLink, opts) {
-    
+
     // Put link on the graph if we are in the random page
-    if (opts.link) {
+    if(opts.link) {
         defineLinks("graph", position, metadata.link);
     }
 
@@ -329,17 +337,21 @@ function drawGraph(dataJson, randGraph, position, metadata, selectVal, metadataL
     var responsive = false;
     Chart.defaults.global.legend.position = "bottom";
 
-    //Height of canvas
+    //Height & width of canvas
     if(opts.height){
 
         var courentChart = "myChart" + position ;
         var elementTemp = document.getElementById(courentChart);
 
-        if(dataJson.length < 50 && (randGraph == "pie" || randGraph == "doughnut")) {
-            elementTemp.width = 600;
-            elementTemp.height = 500;
-            
+        if(dataJson.length < 10 && (randGraph == "bar" || randGraph == "horizontalBar" ||randGraph == "pie" || randGraph == "doughnut")) {
+                elementTemp.width = 400;
+                elementTemp.height = 400;
         }
+        // if(dataJson.length < 50 && (randGraph == "pie" || randGraph == "doughnut")) {
+        //     elementTemp.width = 600;
+        //     elementTemp.height = 500;
+            
+        // }
         else if (dataJson.length >= 50){
             elementTemp.width = 1000;
             elementTemp.height = dataJson.length * 13;

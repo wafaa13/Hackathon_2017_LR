@@ -3,7 +3,7 @@
   "dataType": "NotHistorisedLocalisable",
   "link": "disponibilite_parking",
   "graph":{
-    "possibleGraphs": ["pie", "bar", "doughnut", "horizontalBar"],
+    "possibleGraphs": [ "bar", "horizontalBar"],
     "dataComposition": {
       "title": "Places disponibles",
       "description": "",
